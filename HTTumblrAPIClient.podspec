@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "HTTumblrAPIClient"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Additions to TMTumblrSDK that includes many private methods."
   s.homepage     = "https://github.com/HT154/HTTumblrAPIClient"
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
