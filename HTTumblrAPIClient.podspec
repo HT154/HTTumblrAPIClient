@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/HT154/HTTumblrAPIClient"
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author       = { "HT154" => "ht154@ht154.com" }
-  s.source       = { :git => "https://github.com/HT154/HTTumblrAPIClient.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/HT154/HTTumblrAPIClient.git", :tag => "0.0.2" }
   s.source_files = '*.{h,m}'
   s.requires_arc = true
   s.ios.deployment_target = '5.0'
