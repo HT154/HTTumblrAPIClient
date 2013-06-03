@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/HT154/HTTumblrAPIClient"
   s.license      = 'MIT (example)'
   s.author       = { "HT154" => "ht154@ht154.com" }
-  s.source       = { :git => "https://github.com/HT154/HTTumblrAPIClient/HTTumblrAPIClient.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/HT154/HTTumblrAPIClient.git", :tag => "0.0.1" }
   s.source_files = '/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.requires_arc = true
