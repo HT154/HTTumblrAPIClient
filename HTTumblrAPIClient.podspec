@@ -6,20 +6,12 @@
 #
 Pod::Spec.new do |s|
   s.name         = "HTTumblrAPIClient"
-<<<<<<< HEAD
   s.version      = "0.0.7"
-=======
-  s.version      = "0.0.6"
->>>>>>> 8e6b56ec3071857236fac79619b52ac62b2879d6
   s.summary      = "Additions to TMTumblrSDK that includes many private methods."
   s.homepage     = "https://github.com/HT154/HTTumblrAPIClient"
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author       = { "HT154" => "ht154@ht154.com" }
-<<<<<<< HEAD
   s.source       = { :git => "https://github.com/HT154/HTTumblrAPIClient.git", :tag => "0.0.7" }
-=======
-  s.source       = { :git => "https://github.com/HT154/HTTumblrAPIClient.git", :tag => "0.0.6" }
->>>>>>> 8e6b56ec3071857236fac79619b52ac62b2879d6
   s.source_files = '*.{h,m}'
   s.requires_arc = true
   s.ios.deployment_target = '5.0'
