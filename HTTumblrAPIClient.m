@@ -108,7 +108,7 @@ NSString *URLWithPath(NSString *path);
 
 //mark tag read
 -(JXHTTPOperation *)readTagRequest:(NSString *)tag{
-	return [self postRequestWithPath:[NSString stringWithFormat:@"/user/tags/%@/read",[tag stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] parameters:nil];
+	return [self postRequestWithPath:[NSString stringWithFormat:@"user/tags/%@/read",[tag stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] parameters:nil];
 }
 
 -(void)readTag:(NSString *)tag callback:(TMAPICallback)callback{
@@ -117,7 +117,7 @@ NSString *URLWithPath(NSString *path);
 
 //search
 -(JXHTTPOperation *)searchRequest:(NSString *)query{
-	return [self getRequestWithPath:[NSString stringWithFormat:@"/search/%@",[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] parameters:nil];
+	return [self getRequestWithPath:[NSString stringWithFormat:@"search/%@",[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] parameters:nil];
 }
 
 -(void)search:(NSString *)query callback:(TMAPICallback)callback{
