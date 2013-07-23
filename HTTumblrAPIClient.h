@@ -44,6 +44,14 @@
 -(JXHTTPOperation *)untrackTagRequest:(NSString *)tag;
 -(void)untrackTag:(NSString *)tag callback:(TMAPICallback)callback;
 
+//mark tag read
+-(JXHTTPOperation *)readTagRequest:(NSString *)tag;
+-(void)readTag:(NSString *)tag callback:(TMAPICallback)callback;
+  
+//search
+-(JXHTTPOperation *)searchRequest:(NSString *)query;
+-(void)search:(NSString *)query callback:(TMAPICallback)callback;
+
 //notifications
 -(JXHTTPOperation *)notificationsRequest;
 -(void)notifications:(TMAPICallback)callback;

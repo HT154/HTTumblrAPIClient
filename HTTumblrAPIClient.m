@@ -106,6 +106,24 @@ NSString *URLWithPath(NSString *path);
 	[self sendRequest:[self untrackTagRequest:tag] callback:callback];
 }
 
+//mark tag read
+-(JXHTTPOperation *)readTagRequest:(NSString *)tag{
+	return [self postRequestWithPath:[NSString stringWithFormat:@"/user/tags/%@/read",[tag stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] parameters:nil];
+}
+
+-(void)readTag:(NSString *)tag callback:(TMAPICallback)callback{
+	[self sendRequest:[self readTagRequest:tag] callback:callback];
+}
+
+//search
+-(JXHTTPOperation *)searchRequest:(NSString *)query{
+	return [self getRequestWithPath:[NSString stringWithFormat:@"/search/%@",[query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] parameters:nil];
+}
+
+-(void)search:(NSString *)query callback:(TMAPICallback)callback{
+	[self sendRequest:[self searchRequest:query] callback:callback];
+}
+
 //notifications GET
 -(JXHTTPOperation *)notificationsRequest{
 	return [self getRequestWithPath:@"user/notifications" parameters:nil];
